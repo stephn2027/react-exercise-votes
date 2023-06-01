@@ -1,0 +1,14 @@
+.product__container {
+    box-sizing: border-box;
+    margin: 1rem;
+
+    .product__details {
+        display: block;
+        text-align: left;
+        .details__submitted-by{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+}

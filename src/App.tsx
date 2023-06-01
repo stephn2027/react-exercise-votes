@@ -12,7 +12,7 @@ function App() {
           <p>Popular Products</p>
         </div>
         <Divider />
-        <p>List</p>
+      
         <Products />
       </Container>
     </div>
