@@ -34,7 +34,7 @@ export default function Product({
                 />
               </button>
 
-              {votes}
+              <span className='score__votes'>{votes}</span>
             </div>
             <div className="details__title">
               <a className="title__link" href={url}>
@@ -44,7 +44,7 @@ export default function Product({
             <div className="details__description">{description}</div>
             <div className="details__submitted-by">
               
-                Submitted By:
+                   <p>Submitted By:  </p>
                 <Avatar
                   className="avatar__image"
                   src={require('./' + submitterAvatarUrl)}

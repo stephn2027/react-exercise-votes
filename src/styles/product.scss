@@ -5,10 +5,36 @@
     .product__details {
         display: block;
         text-align: left;
-        .details__submitted-by{
+
+        .details__submitted-by {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            margin: .5rem;
+            .avatar__image{
+                margin-left: 1rem;
+            }
+        }
+
+        .details__score {
+            display: flex;
+
+            .score__votes {
+                padding-top: 8px;
+                color: blue;
+                font-weight: 700;
+
+
+            }
+
+            .score__btn {
+                border: none;
+                background-color: transparent;
+
+                .score__arrow-img {
+
+                }
+            }
         }
     }
 }
