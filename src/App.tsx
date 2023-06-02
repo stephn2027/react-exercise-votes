@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Box } from '@mui/system';
+import { Container } from '@mui/system';
 import './App.css';
 import { Divider } from '@mui/material';
-import Products from './Products';
+import Products from './components/Products';
 
 function App() {
   return (
