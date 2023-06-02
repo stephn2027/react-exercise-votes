@@ -10,6 +10,8 @@ export default function Product({
   submitterAvatarUrl,
   description,
   url,
+  handleVotes,
+  id,
 }) {
   return (
     <Box className='product__container' sx={{ flexGrow: 1 }}>
@@ -26,7 +28,7 @@ export default function Product({
         <Grid xs={12} md={9}>
           <div className="product__details">
             <div className="details__score">
-              <button className="score__btn">
+              <button className="score__btn" onClick={()=>{handleVotes(votes+1,id)}}>
                 <img
                   className="score__arrow-img"
                   src={require('./images/ui/arrow.png')}
@@ -44,11 +46,10 @@ export default function Product({
             <div className="details__description">{description}</div>
             <div className="details__submitted-by">
               
-                   <p>Submitted By:  </p>
+                   <p>Submitted By: </p>
                 <Avatar
                   className="avatar__image"
                   src={require('./' + submitterAvatarUrl)}
-                  
                 />
               
             </div>

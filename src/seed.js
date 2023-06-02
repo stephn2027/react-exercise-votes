@@ -1,4 +1,5 @@
- export const products = window.Seed = (function () {
+//  export const products = 
+export const Seed = (function () {
   function generateVoteCount() {
     return Math.floor((Math.random() * 50) + 15);
   }

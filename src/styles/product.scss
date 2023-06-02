@@ -1,6 +1,6 @@
 .product__container {
     box-sizing: border-box;
-    margin: 1rem;
+    margin: 1.5rem;
 
     .product__details {
         display: block;
@@ -10,9 +10,12 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            margin: .5rem;
-            .avatar__image{
-                margin-left: 1rem;
+            color: rgb(102, 102, 102);
+            padding-block: .5rem;
+            .avatar__image {
+                margin-left: .5rem;
+                width: 2.5rem;
+                height: 2.5rem;
             }
         }
 
@@ -21,9 +24,9 @@
 
             .score__votes {
                 padding-top: 8px;
-                color: blue;
+                color: rgb(6, 6, 7);
                 font-weight: 700;
-
+                margin-left: -8px;
 
             }
 
@@ -32,9 +35,24 @@
                 background-color: transparent;
 
                 .score__arrow-img {
-
+                    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(180deg) brightness(95%) contrast(80%);
+                    ;
                 }
             }
+        }
+
+        .details__title {
+            font-weight: 600;
+            margin-block: .5rem;
+
+            .title__link {
+                text-decoration: none;
+            }
+        }
+
+        .details__description {
+            text-decoration: solid;
+            font-weight: 600;
         }
     }
 }
